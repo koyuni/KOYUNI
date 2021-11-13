@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOYUNI</title>
+  <link rel="stylesheet" href="./navbar.css">
+  <link rel="stylesheet" href="./project-menu.css">
+  <link rel="stylesheet" href="./site-menu.css">
+  <link rel="stylesheet" href="./project-cate.css">
+  <link rel="stylesheet" href="./a.css">
+
+
+  <style>
+    @font-face {
+      font-family: myFirstFont;
+      src: url("./font/OpenSans-Semibold.ttf");
+    }
+
+    body {
+      font-family: myFirstFont;
+      font-size: small;
+      color: rgb(0, 114, 0);
+
+      width: 100%;
+      max-width: 1100px;
+
+      margin: 0 auto;
+      padding: 10px;
+
+      cursor: url("./image/sursor_design(2).png"), auto !important;
+    }
+
+    h1 {
+      font-size: small;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .container {
+        background-color: transparent;
+        display: block;
+      }
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .project-content {
+      margin: 0 auto;
+
+      width: 100%;
+      padding: 0;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .post-thumnail {
+      margin: 2px;
+      flex: 1;
+    }
+
+    .column-left {
+      position: relative;
+      padding: 1em 0.5em 0 0;
+      background-color: transparent;
+    }
+
+    .column-right {
+      position: relative;
+      padding: 1em 0 0 0.5em;
+      background-color: transparent;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      pointer-events: none;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 8px;
+
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0);
+
+      transition: .5s ease;
+      opacity: 0;
+      color: white;
+      font-size: 18px;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .post-thumnail:hover .overlay {
+      opacity: 1;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+
+
+    #top {
+      text-align: right;
+    }
+
+    footer {
+      height: 5%;
+
+      width: 100%;
+      padding: 0;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .project-cate:hover {
+      text-decoration: underline;
+    }
+
+    ::selection {
+      color: white;
+      background: rgb(0, 114, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="site-inner">
+      <div class="navbar">
+        <div class="site-title">
+          <div class="site-logo">
+            <a href="./KOYUNI.html" rel="home">
+              KOYUNI
+            </a>
+          </div>
+        </div>
+        <!-- Site-menu -->
+        <div class="site-menu">
+          <a href="./About.html" rel="About">
+            ABOUT
+          </a>
+        </div>
+        <!-- <div class="site-menu">
+          <a href="./About.html" rel="Project">
+            PROJECT
+          </a>
+        </div> -->
+      </div>
+      <!-- Project-menu -->
+      <div id="project-menu">
+        <div class="project-cate">
+          <a href="./About.html" width="20px">
+            WORK
+          </a>
+        </div>
+        <div class="project-cate">
+          <a href="./About.html">
+            ILLUST
+          </a>
+        </div>
+        <div class="project-cate">
+          <a href="./About.html">
+            BOOK
+          </a>
+        </div>
+
+      </div>
+      <!-- Project-content -->
+      <div class="project-content">
+        <div class="column-left">
+          <div class="post-thumnail">
+            <div>
+              <h1 class="overlay ">MBMD</h1>
+              <a href="./About.html" class="button"><img src="./image(project)/MBMD(main)_web.jpg">
+              </a>
+            </div>
+          </div>
+          <!-- <img src="./image(project)/MBMD(main)_web.jpg" alt="MBMD" class="image" style="width:100%"> -->
+          <p style="margin-top: 0;"></p>
+          <div class="overlay post-thumnail">
+            쓸감
+          </div>
+          <img src="./image(project)/쓸감(main)_web.jpg" alt="쓸감" class="image" style="width:100%">
+          <p style="margin-top: 0;"></p>
+          <div class="overlay post-thumnail">
+            SEL.P Kit
+          </div>
+          <img src="./image(project)/Sel.Pkit(main)_web.jpg" alt="SEL.P Kit" class="image" style="width:100%">
+        </div>
+
+        <div class="column-right">
+          <div class="overlay post-thumnail">
+            Atmosphere
+          </div>
+          <img src="./image(project)/Atmosphere(main)_web.jpg" alt="Atmosphere" class="image" style="width:100%">
+          <p style="margin-top: 0;"></p>
+          <div class="overlay post-thumnail">
+            Deeper
+          </div>
+          <img src="./image(project)/Deeper(main)_web.jpg" alt="Deeper" class="image" style="width:100%">
+          <p style="margin-top: 0;"></p>
+          <div class="overlay post-thumnail">
+            BaekJa
+          </div>
+          <img src="./image(project)/Baekja(main)_web.jpg" alt="BaekJa" class="image" style="width:100%">
+
+        </div>
+      </div>
+
+      <br>
+
+      <footer class="footer">
+        <div>
+          INSTA
+        </div>
+        <div id="top" style="bottom: 5px; right: 5px;">
+          <a href="#">
+            <!-- <img id="top" src="./image/sursor_design(2).png" title="Top"> -->
+            TOP
+          </a>
+        </div>
+      </footer>
+    </div>
+</body>
+
+</html>
